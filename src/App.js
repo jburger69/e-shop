@@ -1,5 +1,7 @@
 import './App.css';
 
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +21,7 @@ function App() {
             <span className="nav__itemLineTwo">Shop</span>
           </div>
           <div className="nav__item">
-            <span className="nav__itemLineOne">Basket</span>
+            <ShoppingBasketIcon fontSize="large"/>
             <span className="nav__itemLineTwo">0</span>
           </div>
       </div>
