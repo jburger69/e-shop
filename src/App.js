@@ -1,12 +1,15 @@
 import './App.css';
 
+//Header
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 
 function App() {
   return (
     <div className="App">
       <div className="header__logo">
-        
+        <StorefrontIcon className='header__logoImage' fontSize="large"/>
+        <h2 className='header__logoTitle'>eShop</h2>
       </div>
       <div className="header__search">
 
