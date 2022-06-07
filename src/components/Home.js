@@ -13,20 +13,23 @@ class Home extends React.Component {
 
 
   render() {
+
+    
+
     const products = this.state.products.length === 0 ? this.props.products.map(p => <ProductCard product={p} />) 
     : this.state.products.map(p => <ProductCard product={p} />)
-    console.log(this.props.products)
+
+
     return (
-      <div>
           <div className="home">
               <div className="home__container">
-                  {/* <img src={logo} alt="#" className='home__image'> */}
                   {products}
               </div>
           </div>
-      </div>
     )
   }
+
+
 }
 
 const mapStateToProps = (state) => {
