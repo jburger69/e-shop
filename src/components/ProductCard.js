@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 
 class ProductCard extends Component {
     render() {
-        const { image, id, title, category, description, price, rating} = this.props.product
+        const { image, title, category, description, price, rating} = this.props.product
         return (
             <Card sx={{ maxWidth: 450 }}>
                 <CardMedia
