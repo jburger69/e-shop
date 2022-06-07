@@ -13,8 +13,8 @@ class Home extends React.Component {
 
 
   render() {
-    const products = this.state.products.length === 0 ? this.props.products.map(p => <ProductCard post={p} />) 
-    : this.state.products.map(p => <ProductCard post={p} />)
+    const products = this.state.products.length === 0 ? this.props.products.map(p => <ProductCard product={p} />) 
+    : this.state.products.map(p => <ProductCard product={p} />)
     console.log(this.props.products)
     return (
       <div>
