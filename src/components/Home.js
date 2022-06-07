@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import "../components/Home.css"
-import logo from "../images/pexels-karolina-grabowska-5632397.jpg";
+// import logo from "../images/pexels-karolina-grabowska-5632397.jpg";
 import ProductCard from '../components/ProductCard';
 
 class Home extends React.Component {
