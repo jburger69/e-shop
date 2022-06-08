@@ -7,14 +7,19 @@ import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormHelperText from '@mui/material/FormHelperText';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 
 export default class SideBarFilter extends Component {
   render() {
     return (
         <>
-            <h1>SideBarFilter</h1>
+            <h2>SideBarFilter</h2>
             <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
                 <FormLabel>Category</FormLabel>
+                <Divider></Divider>
                 <FormGroup>
                     <FormControlLabel
                         control={
@@ -42,6 +47,7 @@ export default class SideBarFilter extends Component {
                     />
                 </FormGroup>
                 <FormLabel>Price of Product</FormLabel>
+                <Divider></Divider>
                 <FormGroup>
                     <FormControlLabel
                         control={
@@ -74,6 +80,16 @@ export default class SideBarFilter extends Component {
                         label="$100 - 1000"
                     />
                 </FormGroup>
+                <FormLabel>Rating's of Product</FormLabel>
+                <Divider></Divider><br></br>
+                <Stack spacing={2}>
+                    <Rating name="size-medium" defaultValue={1} max={1} />
+                    <Rating name="size-medium" defaultValue={2} max={2} />
+                    <Rating name="size-medium" defaultValue={3} max={3} />
+                    <Rating name="size-medium" defaultValue={4} max={4} />
+                    <Rating name="size-medium" defaultValue={5} max={5} />
+                </Stack><br></br>
+                <Button variant="contained">Search</Button>
             </FormControl>
         </>
     )
