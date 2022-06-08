@@ -1,5 +1,6 @@
 import React from 'react'
 import "../components/Header.css"
+import { NavLink as Link } from 'react-router-dom';
 
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
@@ -7,10 +8,13 @@ import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
   return (
+    <>
     <div className='header'>
         <div className="header__logo">
         <StorefrontIcon className='header__logoImage' fontSize="large"/>
-        <h2 className='header__logoTitle'>eShop</h2>
+        <Link to='/home'>
+          <h2 className='header__logoTitle'>eShop</h2>
+        </Link>
       </div>
       <div className="header__search">
         <input type="text" className='header__searchInput'></input>
@@ -31,6 +35,7 @@ function Header() {
           </div>
       </div>
     </div>
+    </>
   )
 }
 
