@@ -5,6 +5,12 @@ import './App.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { getProducts } from './actions/Products'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component {
 
@@ -15,10 +21,12 @@ class App extends Component {
 
   render (){
     return (
-    <div className="App">
-      <Header />
-      <Home />
-    </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Home />
+        </div>
+      </Router>
     )
   };
 
