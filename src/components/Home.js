@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import "../components/Home.css"
 // import logo from "../images/pexels-karolina-grabowska-5632397.jpg";
 import ProductCard from '../components/ProductCard';
+import SideBarFilter from "../components/SideBarFilter";
 
 class Home extends React.Component {
 
@@ -22,8 +23,11 @@ class Home extends React.Component {
 
     return (
           <div className="home">
+              <div className='sidebar__filter'>
+                <SideBarFilter />
+              </div>
               <div className="home__container">
-                  {products}
+                {products}
               </div>
           </div>
     )
