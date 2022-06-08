@@ -2,8 +2,6 @@
 import { Component } from 'react';
 import {connect} from 'react-redux'
 import './App.css';
-import Header from "./components/Header";
-import Home from "./components/Home";
 import { getProducts } from './actions/Products'
 import {
   BrowserRouter as Router,
@@ -11,6 +9,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+// Components
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer"
 
 class App extends Component {
 
@@ -27,6 +30,7 @@ class App extends Component {
         <Routes>
           <Route path='/home' element={< Home />} />
         </Routes>
+        <Footer />
       </Router>
       </div>
     )
