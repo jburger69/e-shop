@@ -7,14 +7,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
+
 class ProductCard extends Component {
     render() {
         const { image, title, category, description, price, rating} = this.props.product
+
         return (
-            <Card sx={{ maxWidth: 450 }}>
+            <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                     component="img"
-                    height="300"
                     image={image}
                     alt="#"
                 />
