@@ -6,6 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import SellIcon from '@mui/icons-material/Sell';
 
 
 class ProductCard extends Component {
@@ -23,17 +25,17 @@ class ProductCard extends Component {
                     <Typography gutterBottom variant="h5" component="div">
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.primary"><br></br>
                         {description}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1"><br></br>
                         {category}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        ${price}
+                    <Typography variant="body1"><br></br>
+                        <SellIcon></SellIcon>${price}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {rating.rate}
+                    <Typography variant="body1"><br></br>
+                        <StarRateIcon></StarRateIcon>{rating.rate}
                     </Typography>
                 </CardContent>
                 <CardActions>
