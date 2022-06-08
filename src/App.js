@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import { getProducts } from './actions/Products'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -21,12 +21,14 @@ class App extends Component {
 
   render (){
     return (
+      <div className="App">
       <Router>
-        <div className="App">
-          <Header />
-          <Home />
-        </div>
+      <Header />
+        <Routes>
+          <Route path='/home' element={< Home />} />
+        </Routes>
       </Router>
+      </div>
     )
   };
 
