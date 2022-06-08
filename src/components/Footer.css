@@ -1,0 +1,10 @@
+.footer__bar {
+    background-color: #131921;
+    width: 100%;
+    height: 50px;
+    /* position: fixed; */
+    bottom: 0;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 23px;
+}
