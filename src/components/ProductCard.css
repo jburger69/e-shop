@@ -1,8 +1,19 @@
+.MuiCard-root {
+    margin: auto;
+    transition: 0.3s;
+    box-shadow: 0 8px 40px -12px rgba(0,0,0,0.3);
+    width: 320px;
+    height: 415px;
+    background:white;
+    padding:25px;
+    margin: 1%;
+    margin-bottom: 3%;
+}
 
-
-.product__item__img {
-    height: auto;
-    max-height: 250px;
+.MuiCardMedia-img {
+    /* height: 45vh; */
+    /* max-height: 250px; */
+    display: block;
     width: auto;
-    max-width: 250px;
+    max-width: 100px;
 }
