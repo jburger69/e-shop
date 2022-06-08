@@ -13,8 +13,10 @@
 
 .MuiCardMedia-img {
     /* height: 45vh; */
-    /* max-height: 250px; */
-    display: block;
-    width: auto;
-    max-width: 100px;
+    /* max-height: 175px; */
+    /* display: block; */
+    /* width: auto; */
+    max-width: 160px;
+    margin-left: 60px;
+    margin-bottom: 60px;
 }
