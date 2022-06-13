@@ -13,7 +13,8 @@ import {
 // Components
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Product from "./components/Product";
 
 class App extends Component {
 
@@ -29,6 +30,7 @@ class App extends Component {
       <Header />
         <Routes>
           <Route path='/' element={< Home />} />
+          <Route path='/products/:id' element={< Product  products={this.props.products} />} />
         </Routes>
         <Footer />
       </Router>
