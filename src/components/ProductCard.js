@@ -8,11 +8,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import SellIcon from '@mui/icons-material/Sell';
+import { Link } from "react-router-dom";
 
 
 class ProductCard extends Component {
     render() {
-        const { image, title, category, description, price, rating} = this.props.product
+        const { id, image, title, category, description, price, rating} = this.props.product
 
         return (
             <Card sx={{ maxWidth: 400 }}>
@@ -40,7 +41,8 @@ class ProductCard extends Component {
                 </CardContent>
                 <CardActions>
                     <Button size="small">Add to Cart</Button>
-                    <Button size="small">View Product</Button>
+                    {/* <Button size="small">View Product</Button> */}
+                    <Link to={`products/${id}`}>View Product</Link>
                 </CardActions>
             </Card>
         );
