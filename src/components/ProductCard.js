@@ -42,7 +42,7 @@ class ProductCard extends Component {
                 <CardActions>
                     <Button size="small">Add to Cart</Button>
                     {/* <Button size="small">View Product</Button> */}
-                    <Link to={`products/${id}`}>View Product</Link>
+                    <Link to={`/products/${id}`}>View Product</Link>
                 </CardActions>
             </Card>
         );
