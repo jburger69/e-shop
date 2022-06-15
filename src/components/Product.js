@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import CardMedia from '@mui/material/CardMedia';
+import '../components/Product.css'
 
 const Product = ({ products }) => {
     const { id } = useParams();
