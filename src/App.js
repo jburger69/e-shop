@@ -30,7 +30,7 @@ class App extends Component {
       <Header />
         <Routes>
           <Route path='/' element={< Home />} />
-          <Route path='/products/:id' element={< Product  products={this.props.products} />} />
+          <Route path='/products/:id' element={<Product  products={this.props.products} />} />
         </Routes>
         <Footer />
       </Router>
