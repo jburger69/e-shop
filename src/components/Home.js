@@ -17,8 +17,8 @@ class Home extends React.Component {
 
     
 
-    const products = this.state.products.length === 0 ? this.props.products.map(p => <ProductCard product={p} />) 
-    : this.state.products.map(p => <ProductCard product={p} />)
+    const products = this.state.products.length === 0 ? this.props.products.map((p, key) => <ProductCard product={p} key={key} />) 
+    : this.state.products.map((p, key) => <ProductCard product={p} key={key} />)
 
 
     return (
