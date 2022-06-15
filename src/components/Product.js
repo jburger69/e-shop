@@ -1,33 +1,37 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { useSelector} from 'react-redux';
-import _ from 'lodash';
+import { useParams } from 'react-router-dom';
+import CardMedia from '@mui/material/CardMedia';
 
-// const selectProductIds = state => state.products.map(product => product.id)
-// console.log(selectProductIds)
+const Product = ({ products }) => {
+    const { id } = useParams();
 
-class Product extends React.Component {
+    const productId = products[id - 1]
+    console.log(productId)
+    const { image, title, category, description, price, rating} = productId
 
-    
-    
-    
-    // const product = productDetails.find(product => product.id === parseInt(match.params.id))
-    // const { title} = product
 
-    // console.log(productDetails.id)
-    render() {
-        
-        
-        return (
-            <div>
-                <h1>hello</h1>
+
+    return (
+        <div className='product__container'>
+            <div className='product__image'>
+                <CardMedia
+                        component="img"
+                        image={image}
+                        alt="#"
+                />
             </div>
-          )
-    }
-
-
+            <div className='product__info'>
+                <h1>{title}</h1>
+                <h1>{description}</h1>
+                <h1>{category}</h1>
+                <h1>{price}</h1>
+                <h1>{rating.rate}</h1>
+            </div>
+        </div>
+    );
 }
 
+export default Product;
 
 
-export default connect()(Product);
+
