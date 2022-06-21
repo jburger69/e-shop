@@ -1,8 +1,8 @@
 .product__container {
     display: flex;
-    margin: auto;
+    margin: 50px;
 }
 
 .product__info {
-    
+    margin-left: 150px;
 }
