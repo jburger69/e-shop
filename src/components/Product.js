@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import CardMedia from '@mui/material/CardMedia';
 import '../components/Product.css'
+import Typography from '@mui/material/Typography';
 
 const Product = ({ products }) => {
     const { id } = useParams();
@@ -22,11 +23,11 @@ const Product = ({ products }) => {
                 />
             </div>
             <div className='product__info'>
-                <h1>{title}</h1>
-                <h1>{description}</h1>
-                <h1>{category}</h1>
-                <h1>{price}</h1>
-                <h1>{rating.rate}</h1>
+                <h4>{title}</h4>
+                <Typography variant="body1" gutterBottom>{description}</Typography>
+                <h4>{category}</h4>
+                <h4>{price}</h4>
+                <h4>{rating.rate}</h4>
             </div>
         </div>
     );
