@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 import CardMedia from '@mui/material/CardMedia';
 import '../components/Product.css'
 import Typography from '@mui/material/Typography';
+import StarRateIcon from '@mui/icons-material/StarRate';
+import SellIcon from '@mui/icons-material/Sell';
+import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 
 const Product = ({ products }) => {
@@ -25,10 +28,13 @@ const Product = ({ products }) => {
                 <h4>{title}</h4>
                 <Typography variant="body1" gutterBottom>{description}</Typography>
                 <h4>{category}</h4>
-                <h4>{price}</h4>
-                <h4>{rating.rate}</h4>
+                <SellIcon></SellIcon>${price}<br></br><br></br>
+                <StarRateIcon></StarRateIcon>{rating.rate}<br></br>
             </div>
-            <Link to="/">Back to Products</Link>
+            <div className='product__links'>
+                <Button className='back__to__products' size="small">Add to Cart</Button><br></br>
+                <Link className='back__to__products' to="/">Back to Products</Link>
+            </div>
         </div>
     );
 }
