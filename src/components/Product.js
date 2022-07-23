@@ -3,13 +3,12 @@ import { useParams } from 'react-router-dom';
 import CardMedia from '@mui/material/CardMedia';
 import '../components/Product.css'
 import Typography from '@mui/material/Typography';
+import { Link } from "react-router-dom";
 
 const Product = ({ products }) => {
     const { id } = useParams();
-
     const productId = products[id - 1]
-    console.log(productId)
-    const { image, title, category, description, price, rating} = productId
+    const {  image, title, category, description, price, rating} = productId
 
 
 
@@ -29,6 +28,7 @@ const Product = ({ products }) => {
                 <h4>{price}</h4>
                 <h4>{rating.rate}</h4>
             </div>
+            <Link to="/">Back to Products</Link>
         </div>
     );
 }
