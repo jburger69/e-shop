@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
+import Checkout from "./components/Checkout";
 
 class App extends Component {
 
@@ -31,6 +32,7 @@ class App extends Component {
         <Routes>
           <Route path='/' element={< Home />} />
           <Route path='/products/:id' element={<Product  products={this.props.products} />} />
+          <Route path='/checkout' element={< Checkout />}/>
         </Routes>
         <Footer />
       </Router>
